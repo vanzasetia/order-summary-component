@@ -384,15 +384,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #e0e8ff;
-  padding: 0 1.5rem;
+  background: #e0e8ff no-repeat top/100%;
+  background-image: url("../images/pattern-background-mobile.svg");
+  padding: 3rem 1.5rem;
   min-height: 100vh;
   color: #7280a7;
   font-family: "Red Hat Display", sans-serif;
 }
-@media (orientation: landscape) {
+@media screen and (min-width: 46.875em) {
   body {
-    padding: 3rem 1.5rem;
+    background-image: url("../images/pattern-background-desktop.svg");
   }
 }
 
@@ -456,7 +457,14 @@ img {
   border-radius: 1.25em;
   box-shadow: 0 0.625rem 1.875rem rgba(56, 41, 224, 0.15);
   background-color: white;
+  max-width: 25rem;
   overflow: hidden;
+}
+
+@media screen and (min-width: 25em) {
+  .card__title {
+    font-size: 1.875rem;
+  }
 }
 
 .card__content {
@@ -506,6 +514,15 @@ img {
   background-color: #f5f7ff;
   padding: 0.75rem;
   font-size: 0.875rem;
+}
+@media screen and (max-width: 20.9375em) {
+  .plan > *:first-child {
+    display: none;
+    justify-content: space-between;
+  }
+  .plan > *:nth-child(2) {
+    margin-left: 0;
+  }
 }
 
 .plan__description {

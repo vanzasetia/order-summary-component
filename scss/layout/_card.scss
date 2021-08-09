@@ -6,7 +6,14 @@
     0 rem(10) rem(30) rgba($bright-blue, 0.15)
   ;
   background-color: hsl(0, 0%, 100%);
+  max-width: rem(400);
   overflow: hidden;
+}
+
+.card__title {
+  @media screen and (min-width: 25em) {
+    font-size: rem(30);
+  }
 }
 
 .card__content {

@@ -8,6 +8,17 @@
   background-color: $very-pale-blue;
   padding: rem(12);
   font-size: rem(14);
+  
+  @media screen and (max-width: 20.9375em) {
+    & > *:first-child {
+      display: none;
+      justify-content: space-between;
+    }
+    
+    & > *:nth-child(2) {
+      margin-left: 0;
+    }
+  }
 }
 
 .plan__description {
