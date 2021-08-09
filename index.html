@@ -1,113 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta
-    name="title"
-    content="Vanza Setia | Order Summary Card"
-  />
-  <meta
-    name="description"
-    content="Order summary card challenge from Frontend Mentor. Coded by Vanza Setia."
-  />
-  <meta name="robots" content="index,follow" />
-  <meta name="author" content="Vanza Setia, venusbumi2@gmail.com" />
-  <meta
-    name="url"
-    content="https://vanzaordersummary.netlify.app/"
-  />
-  <base href="/" />
-  <link
-    rel="canonical"
-    href="https://vanzaordersummary.netlify.app/"
-  />
-  <!-- Open Graph Protocol -->
-  <meta
-    property="og:title"
-    content="Vanza Setia | Order Summary Card"
-  />
-  <meta
-    property="og:description"
-    content="Order summary card challenge from Frontend Mentor. Coded by Vanza Setia."
-  />
-  <meta
-    property="og:image"
-    content="https://vanzaordersummary.netlify.app/design/desktop-preview.jpg"
-  />
-  <meta
-    property="og:url"
-    content="https://vanzaordersummary.netlify.app/"
-  />
-  <meta name="twitter:card" content="summary_large_image" />
-  <!-- Prevent Google From Showing Search Box -->
-  <meta name="google" content="nositelinkssearchbox" />
-  <!-- Preload Font Family To Prevent Shifting Layout -->
-  <link
-    rel="preload"
-    href="./fonts/RedHatDisplay-Black.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
-  <link
-    rel="preload"
-    href="./fonts/RedHatDisplay-Bold.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
-  <link
-    rel="preload"
-    href="./fonts/RedHatDisplay-Medium.woff2"
-    as="font"
-    type="font/woff2"
-    crossorigin
-  />
-  <!-- Directly Used Preloaded Fonts -->
-  <!-- prettier-ignore -->
-  <style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <meta name="title" content="Vanza Setia | Order Summary Card" />
+    <meta
+      name="description"
+      content="Order summary card challenge from Frontend Mentor. Coded by Vanza Setia."
+    />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="Vanza Setia, venusbumi2@gmail.com" />
+    <meta
+      name="url"
+      content="https://vanzaordersummary.netlify.app/"
+    />
+    <base href="/" />
+    <link
+      rel="canonical"
+      href="https://vanzaordersummary.netlify.app/"
+    />
+    <!-- Open Graph Protocol -->
+    <meta
+      property="og:title"
+      content="Vanza Setia | Order Summary Card"
+    />
+    <meta
+      property="og:description"
+      content="Order summary card challenge from Frontend Mentor. Coded by Vanza Setia."
+    />
+    <meta
+      property="og:image"
+      content="https://vanzaordersummary.netlify.app/design/desktop-preview.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://vanzaordersummary.netlify.app/"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Prevent Google From Showing Search Box -->
+    <meta name="google" content="nositelinkssearchbox" />
+    <!-- Preload Font Family To Prevent Shifting Layout -->
+    <link
+      rel="preload"
+      href="./fonts/RedHatDisplay-Black.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/RedHatDisplay-Bold.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link
+      rel="preload"
+      href="./fonts/RedHatDisplay-Medium.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <!-- Directly Used Preloaded Fonts -->
+    <!-- prettier-ignore -->
+    <style>
     @font-face{font-family:"Red Hat Display";font-style:normal;font-weight:900;font-display:swap;src:url("./fonts/RedHatDisplay-Black.woff2") format("woff2"), url("./fonts/RedHatDisplay-Black.woff") format("woff")}@font-face{font-family:"Red Hat Display";font-style:normal;font-weight:700;font-display:swap;src:url("./fonts/RedHatDisplay-Bold.woff2") format("woff2"), url("./fonts/RedHatDisplay-Bold.woff") format("woff")}@font-face{font-family:"Red Hat Display";font-style:normal;font-weight:500;font-display:swap;src:url("./fonts/RedHatDisplay-Medium.woff2") format("woff2"), url("./fonts/RedHatDisplay-Medium.woff") format("woff")}
   </style>
-  <!-- Favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-  <link rel="manifest" href="images/site.webmanifest">
-  <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <meta name="msapplication-TileColor" content="#2d89ef">
-  <meta name="msapplication-config" content="images/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-  <!-- Current CSS -->
-  <link rel="stylesheet" href="./css/style.css">
-  <!-- Minified CSS -->
-  <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
-  <title>Vanza Setia | Order Summary Card</title>
-</head>
-<body dir="ltr">
-  <main>
-    <h1 class="sr-only">Order Summary Card Component</h1>
-    <section class="card">
-      <img src="./images/illustration-hero.svg" alt="" class="card__illustration" aria-hidden="true" width="450" height="220">
-      <div class="card__content">
-        <h2 class="card__title">Order Summary</h2>
-        <p class="card__description">
-          You can now listen to millions of songs, audiobooks, and podcasts on any 
-          device anywhere you like!
-        </p>
-        <div class="plan">
-          <img src="./images/icon-music.svg" alt="" class="plan__icon" aria-hidden="true" width="48" height="48">
-          <p class="plan__description">
-            <strong class="plan__title">Annual Plan</strong>
-            <span class="plan__price">$59.99/year</span>
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="images/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
+    <meta
+      name="msapplication-config"
+      content="images/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <!-- Current CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Minified CSS -->
+    <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <title>Vanza Setia | Order Summary Card</title>
+  </head>
+  <body dir="ltr">
+    <main>
+      <h1 class="sr-only">Order Summary Card Component</h1>
+      <section class="card">
+        <img
+          src="./images/illustration-hero.svg"
+          alt=""
+          class="card__illustration"
+          aria-hidden="true"
+          width="450"
+          height="220"
+        />
+        <div class="card__content">
+          <h2 class="card__title">Order Summary</h2>
+          <p class="card__description">
+            You can now listen to millions of songs, audiobooks, and
+            podcasts on any device anywhere you like!
           </p>
-          <button type="button" class="plan__btn">Change <span class="sr-only">your plan.</span></button>
+          <div class="plan">
+            <img
+              src="./images/icon-music.svg"
+              alt=""
+              class="plan__icon"
+              aria-hidden="true"
+              width="48"
+              height="48"
+            />
+            <p class="plan__description">
+              <strong class="plan__title">Annual Plan</strong>
+              <span class="plan__price">$59.99/year</span>
+            </p>
+            <button type="button" class="plan__btn">
+              Change <span class="sr-only">your plan.</span>
+            </button>
+          </div>
+          <a href="#" class="card__btn card__btn--payment"
+            >Proceed to Payment</a
+          >
+          <a href="#" class="card__btn card__btn--cancel"
+            >Cancel Order</a
+          >
         </div>
-        <a href="#" class="card__btn card__btn--payment">Proceed to Payment</a>
-        <a href="#" class="card__btn card__btn--cancel">Cancel Order</a>
-      </div>
-    </section>
-  </main>
-</body>
+      </section>
+    </main>
+  </body>
 </html>
