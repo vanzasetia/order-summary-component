@@ -49,14 +49,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $pale-blue;
-  padding: 0 rem(24);
+  background: $pale-blue no-repeat top/100%;
+  background-image: url("../images/pattern-background-mobile.svg");
+  padding: rem(48) rem(24);
   min-height: 100vh;
   color: $desaturated-blue;
   font-family: "Red Hat Display", sans-serif;
   
-  @media (orientation: landscape) {
-    padding: rem(48) rem(24);
+  @media screen and (min-width: 46.875em) {
+    background-image: url("../images/pattern-background-desktop.svg");
   }
 }
 
