@@ -1,0 +1,41 @@
+@use "../abstracts" as *;
+
+.plan {
+  display: flex;
+  align-items: center;
+  margin: rem(24) 0;
+  border-radius: 1em;
+  background-color: $very-pale-blue;
+  padding: rem(12);
+  font-size: rem(14);
+}
+
+.plan__description {
+  margin: 0 auto 0 rem(14);
+  font-size: inherit;
+}
+
+.plan__title,
+.plan__price {
+  display: block;
+}
+
+.plan__title {
+  color: $dark-blue;
+  font-weight: 900;
+}
+
+.plan__btn {
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
+  text-decoration: underline;
+  color: $bright-blue;
+  font-weight: 700;
+  
+  @include focus-visible;
+  @include on-event {
+    text-decoration: none;
+    color: rgb(118, 108, 241);
+  }
+}

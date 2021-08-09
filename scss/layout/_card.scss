@@ -1,0 +1,51 @@
+@use "../abstracts" as *;
+
+.card {
+  border-radius: 1.25em;
+  box-shadow:
+    0 rem(10) rem(30) rgba($bright-blue, 0.15)
+  ;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+}
+
+.card__content {
+  padding: rem(24);
+  text-align: center;
+}
+
+.card__illustration {
+  width: 100%;
+}
+
+.card__btn {
+  display: block;
+  cursor: pointer;
+  padding: rem(16) 0;
+  width: 100%;
+  font-weight: 700;
+  
+  @include focus-visible;
+}
+
+.card__btn--payment {
+  margin-bottom: rem(14);
+  border-radius: 0.75em;
+  box-shadow: 
+    0 rem(14) rem(14) rgba($bright-blue, 0.2)
+  ;
+  background-color: $bright-blue;
+  color: $very-pale-blue;
+  
+  @include on-event {
+    background-color: rgb(118, 108, 241);
+  }
+}
+
+.card__btn--cancel {
+  color: $desaturated-blue;
+  
+  @include on-event {
+    color: $dark-blue;
+  }
+}
