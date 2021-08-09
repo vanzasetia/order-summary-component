@@ -387,6 +387,7 @@ body {
   background-color: #e0e8ff;
   padding: 0 1.5rem;
   min-height: 100vh;
+  color: #7280a7;
   font-family: "Red Hat Display", sans-serif;
 }
 @media (orientation: landscape) {

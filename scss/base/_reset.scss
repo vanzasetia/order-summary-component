@@ -52,6 +52,7 @@ body {
   background-color: $body-bg;
   padding: 0 rem(24);
   min-height: 100vh;
+  color: $body-color;
   font-family: "Red Hat Display", sans-serif;
   
   @media (orientation: landscape) {
