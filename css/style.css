@@ -381,7 +381,18 @@ html {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e8ff;
+  padding: 0 1.5rem;
+  min-height: 100vh;
   font-family: "Red Hat Display", sans-serif;
+}
+@media (orientation: landscape) {
+  body {
+    padding: 3rem 1.5rem;
+  }
 }
 
 h1 {

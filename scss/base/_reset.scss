@@ -46,7 +46,17 @@ html {
 }
 
 body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $body-bg;
+  padding: 0 rem(24);
+  min-height: 100vh;
   font-family: "Red Hat Display", sans-serif;
+  
+  @media (orientation: landscape) {
+    padding: rem(48) rem(24);
+  }
 }
 
 // h1 - h6
