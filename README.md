@@ -27,15 +27,18 @@
 - [Story](#the-story-when-doing-this-challenge)
 - [What I Learned](#what-i-learned)
 - [Technology that I used](#built-with)
-- [Useful Resources](#useful-resources)
 - [Continued Development](#continued-development)
 - [Author](#author)
 
 ## The Story When Doing This Challenge
+I noticed that the `style-guide.md` didn't provide the `active-states` color. So, I used color picker and got this color code `rgb(118, 108, 241)`.
 
+I also got confused on the `font-weight`. I used `900` on `Order Summary` and `Annual Plan`. For the `Proceed Payment` and `Cancel Order`, I used `700` and the rest used `500`. You can double check if you want to make sure that what I said is true or not.
+
+For the breakpoint, I only used `320px`, `400px`, and `750px`. First on `320px` breakpoint for the smallest screen width, I made the music icon hidden. On `400px`, I made the `Order Summary` bigger. Lastly, on `750px` I used `pattern-background-desktop.svg`.
 
 ## What I Learned
-
+* Don't underestimate newbie challenges 😉.
 
 ## Built With
 This project is created using **HTML5**, **CSS3**, and **Sass**. 
@@ -46,13 +49,9 @@ This project is created using **HTML5**, **CSS3**, and **Sass**.
   <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg" alt="" width="auto" height="70px">
 </p>
 
-## Useful Resources
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
 ## Continued development
 I will take people feedback and improve this solution.
 
 ## Author
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@vanzasetia](https://www.frontendmentor.io/profile/vanzasetia)
+- Twitter - [@vanzasetia](https://www.twitter.com/vanzasetia)
