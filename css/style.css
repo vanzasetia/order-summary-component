@@ -473,7 +473,7 @@ img {
 }
 @media screen and (min-width: 25em) {
   .card__content {
-    padding: 4.375rem;
+    padding: 2.5rem;
   }
 }
 
