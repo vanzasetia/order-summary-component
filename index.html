@@ -9,7 +9,7 @@
   />
   <meta
     name="description"
-    content="Get access to listen millions musics, podcasts, and audiobooks."
+    content="Order summary card challenge from Frontend Mentor. Coded by Vanza Setia."
   />
   <meta name="robots" content="index,follow" />
   <meta name="author" content="Vanza Setia, venusbumi2@gmail.com" />
@@ -29,7 +29,7 @@
   />
   <meta
     property="og:description"
-    content="Get access to listen millions musics, podcasts, and audiobooks."
+    content="Order summary card challenge from Frontend Mentor. Coded by Vanza Setia."
   />
   <meta
     property="og:image"
@@ -91,20 +91,28 @@
   <title>Vanza Setia | Order Summary Card</title>
 </head>
 <body dir="ltr">
-  <h1>Hello World</h1>
-  <!--
-  Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
-  -->
+  <main>
+    <h1 class="sr-only">Order Summary Card Component</h1>
+    <section class="card">
+      <img src="./images/illustration-hero.svg" alt="" class="card__illustration" aria-hidden="true" width="450" height="220">
+      <div class="card__content">
+        <h2 class="card__title">Order Summary</h2>
+        <p class="card__description">
+          You can now listen to millions of songs, audiobooks, and podcasts on any 
+          device anywhere you like!
+        </p>
+        <div class="plan">
+          <img src="./images/icon-music.svg" alt="" class="plan__icon" aria-hidden="true" width="48" height="48">
+          <p class="plan__description">
+            <strong class="plan__title">Annual Plan</strong>
+            <span class="plan__price">$59.99/year</span>
+          </p>
+          <button type="button" class="plan__btn">Change</button>
+        </div>
+        <a href="#" class="card__btn card__btn--payment">Proceed to Payment</a>
+        <a href="#" class="card__btn card__btn--cancel">Cancel Order</a>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
