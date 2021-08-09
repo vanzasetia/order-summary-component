@@ -49,10 +49,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: $body-bg;
+  background-color: $pale-blue;
   padding: 0 rem(24);
   min-height: 100vh;
-  color: $body-color;
+  color: $desaturated-blue;
   font-family: "Red Hat Display", sans-serif;
   
   @media (orientation: landscape) {
@@ -63,8 +63,9 @@ body {
 // h1 - h6
 @for $i from 1 through 6 {
   h#{$i} {
-    margin: rem(14) 0;
-    line-height: 1.6;
+    line-height: 1.4;
+    color: $dark-blue;
+    font-weight: 900;
   }
 }
 
