@@ -4,6 +4,7 @@
   "description": "Created on 9 August 2021",
   "main": "index.js",
   "scripts": {
+    /*
     "devserver": "browser-sync start --server  --watch --port='8080' --no-inject-changes",
   "watch:sass": "sass scss/main.scss css/style.css --watch --no-source-map",
   "start": "npm-run-all --parallel devserver watch:sass",
