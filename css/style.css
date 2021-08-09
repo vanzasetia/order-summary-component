@@ -473,7 +473,7 @@ img {
 }
 @media screen and (min-width: 25em) {
   .card__content {
-    padding: 2.5rem;
+    padding: 2.8125rem;
   }
 }
 
@@ -543,6 +543,7 @@ img {
 .plan__title,
 .plan__price {
   display: block;
+  font-size: 1rem;
 }
 
 .plan__title {
