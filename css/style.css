@@ -543,7 +543,12 @@ img {
 .plan__title,
 .plan__price {
   display: block;
-  font-size: 1rem;
+}
+@media screen and (max-width: 20em) {
+  .plan__title,
+.plan__price {
+    font-size: 1rem;
+  }
 }
 
 .plan__title {

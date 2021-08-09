@@ -33,7 +33,10 @@
 .plan__title,
 .plan__price {
   display: block;
-  font-size: rem(16);
+  
+  @media screen and (max-width: 20em) {
+    font-size: rem(16);
+  }
 }
 
 .plan__title {
