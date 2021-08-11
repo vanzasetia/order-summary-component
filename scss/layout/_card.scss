@@ -59,4 +59,8 @@
   @include on-event {
     color: $dark-blue;
   }
+  
+  &:focus {
+    color: $dark-blue;
+  }
 }
