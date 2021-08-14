@@ -31,9 +31,7 @@
 - [Author](#author)
 
 ## The Story When Doing This Challenge
-I noticed that the `style-guide.md` didn't provide the `active-states` color. So, I used color picker and got this color code `rgb(118, 108, 241)`.
-
-I also got confused on the `font-weight`. I used `900` on `Order Summary` and `Annual Plan`. For the `Proceed Payment` and `Cancel Order`, I used `700` and the rest used `500`. You can double check if you want to make sure that what I said is true or not.
+I got confused on the `font-weight`. I used `900` on `Order Summary` and `Annual Plan`. For the `Proceed Payment` and `Cancel Order`, I used `700` and the rest used `500`. You can double check if you want to make sure that what I said is true or not.
 
 For the breakpoint, I only used `320px`, `400px`, and `750px`. First on `320px` breakpoint for the smallest screen width, I made the music icon hidden. On `400px`, I made the `Order Summary` bigger. Lastly, on `750px` I used `pattern-background-desktop.svg`.
 
