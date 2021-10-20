@@ -1,7 +1,7 @@
 # Order Summary Card
 
 <p align="left">
-  <img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty">
+  <a href="https://www.frontendmentor.io/challenges?difficulties=1" target="_blank"><img src="https://img.shields.io/badge/Difficulty-Newbie-14C2C8?style=for-the-badge&logo=frontendmentor" alt="Difficulty"></a>
   <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vanzasetia/order-summary-component?style=for-the-badge&logo=github">
   <a href="https://twitter.com/vanzasetia" target="_blank"><img src="https://img.shields.io/twitter/follow/vanzasetia?logo=twitter&style=for-the-badge" alt="Twitter followers." /></a>
   <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/vanzasetia/order-summary-component?style=for-the-badge&logo=git">
@@ -31,7 +31,7 @@
 - [Author](#author)
 
 ## The Story When Doing This Challenge
-I got confused on the `font-weight`. I used `900` on `Order Summary` and `Annual Plan`. For the `Proceed Payment` and `Cancel Order`, I used `700` and the rest used `500`. You can double check if you want to make sure that what I said is true or not.
+I got confused on the `font-weight`. I used `900` on `Order Summary` and `Annual Plan`. For the `Proceed Payment` and `Cancel Order`, I used `700` and the rest used `500`.
 
 For the breakpoint, I only used `320px`, `400px`, and `750px`. First on `320px` breakpoint for the smallest screen width, I made the music icon hidden. On `400px`, I made the `Order Summary` bigger. Lastly, on `750px` I used `pattern-background-desktop.svg`.
 
