@@ -37,6 +37,9 @@
 .plan__title,
 .plan__price {
   display: block;
+  margin: 0;
+  line-height: 1.6;
+  font-size: inherit;
   
   @media screen and (max-width: 20em) {
     font-size: rem(16);
